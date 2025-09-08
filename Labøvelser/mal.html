@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mal for HTML</title>
+</head>
+<body>
+    
+    <!--HEADER-->
+    <header>
+        <a href="index.html">LOGO</a>
+        <!--NAVIGATION-->
+            <nav>
+                <ul>
+                    <li> 
+                        <!--NAVIGATION ELEMENTS-->
+                        <a href="index.html">Hjem</a>
+                        <a href="#contactform">Kontakt Oss</a>
+                        <a href="labovelse.html">Labøvelse</a>
+                        <a href="mal.html">Mal</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <h1>Mal til HTML nettside struktur </h1>
+        <p>Dette er en mal til en typisk nettside struktur i HTML.</p>
+        <section>
+            <h2>HTML koden er slik:</h2>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Document&lt;/title&gt;
+                    &lt;/head&gt;
+                    <!--BODY-->
+                    &lt;body&gt;
+                        <!--HEADER-->
+                        &lt;header&gt;
+                            &lt;a href="index.html"&gt;TITTEL&lt;/a&gt;
+                                &lt;nav&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt; 
+                                            &lt;a href="index.html"&gt;Hjem&lt;/a&gt;
+                                            &lt;a href="#contactform"&gt;Kontakt Oss&lt;/a&gt;
+                                            &lt;a href="labovelse.html"&gt;Labøvelse&lt;/a&gt;
+                                            &lt;a href="mal.html"&gt;Mal&lt;/a&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/nav&gt;
+                        &lt;/header&gt;
+                        <!--MAIN-->                       
+                        &lt;main&gt;
+                            INNHOLD
+                        &lt;/main&gt;
+                        <!--FOOTER-->
+                        &lt;footer&gt;
+                            &lt;p&gt; NAVN / E-POST &lt;/p&gt;
+                            &lt;h4&gt;Kontaktskjema&lt;/h4&gt;
+                            &lt;form id="contactform"&gt;
+                                &lt;label&gt;E-post:
+                                &lt;input type="email" placeholder="ola.nordmann@gmail.com"&gt;
+                                &lt;/label&gt;
+                                &lt;label&gt;Tema:
+                                &lt;input type="text" placeholder="Skriv tema...:"&gt;
+                                &lt;/label&gt;
+                                &lt;label&gt;Melding:
+                                &lt;textarea placeholder="Skriv din melding her..."&gt;&lt;/textarea&gt;
+                                &lt;input type="submit" value="Send"&gt;
+                                &lt;/form&gt;
+                        &lt;/footer&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <p>Krystian Czysz / krystiac@hiof.no</p>
+        <!--CONTACT US-->
+        <h4>Kontaktskjema</h4>
+        <form id="contactform">
+            <label>E-post:
+            <input type="email" placeholder="ola.nordmann@gmail.com">
+            </label>
+            <label>Tema:
+            <input type="text" placeholder="Skriv tema...:">
+            </label>
+            <label>Melding:
+            <textarea placeholder="Skriv din melding her..."></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </footer>
+</body>
+</html>
