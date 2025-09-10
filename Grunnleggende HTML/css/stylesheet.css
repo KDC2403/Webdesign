@@ -1,5 +1,34 @@
+/*VARIABLES*/
+:root {
+    --main-color: green;
+    --secondary-color: darkgoldenrod;
+    --font-color: black;
+    --background-color: white;
+    --border-color: #828282;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*HEADER STYLE*/
+#global-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+    nav{
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                display: inline-block;
+
+            }
+        }
+    }
 }
 
 /*MAIN LOGO STYLE*/
@@ -17,6 +46,13 @@ a {
     color: black;
 }
 
+/*ADVERTISEMENT STYLE*/
+.advertisement {
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+/*ARTICLE STYLE*/
 article {
     margin: 1rem 0;
     border: 3px solid #828282;
@@ -38,9 +74,11 @@ article {
     color: white;
     padding: 0.75rem;
     border-radius: 5px;
+    border: none;
 }
 
 .btn:hover {
     background-color: darkgoldenrod;
     color: white;
 }
+

@@ -13,7 +13,7 @@
 <body>
     
     <!--HEADER-->
-    <header>
+    <header id="global-header">
         <a href="index.html" id="mainlogo">LOGO</a>
         <!--NAVIGATION-->
         <nav>
@@ -21,14 +21,16 @@
                 <li>
                     <!--ELEMENTS-->
                     <a href="index.html">Hjem</a>
-                    <a href="products.html">Produkter</a>
+                </li>
+                <li>
+                    <a href="products.html">Produkter</a>    
                 </li>
             </ul>
         </nav>
     </header>
 
     <!--SECTION-->
-    <section>
+    <section class="advertisement">
         <h2>Crazy Gaming Deals!</h2>
         <img src="https://picsum.photos/200/300?grayscale" alt="Lorem Picsum">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis molestias ipsa aliquam, id expedita culpa quaerat consequuntur eius recusandae provident vitae aliquid sapiente ducimus, modi perspiciatis sequi? Soluta, vitae quisquam?</p>
@@ -41,7 +43,7 @@
             <h2>Populære spæll</h2>
             <article>
                 <!--Red Dead Redemption-->
-                <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemption">
+                <img src="images/Red_Dead_Redemption.jpg" alt="Red dead redemption">
                 <h3>Red Dead Redemption</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis molestias ipsa aliquam, id expedita culpa quaerat consequuntur eius recusandae provident vitae aliquid</p>
                 <p>Kr 499</p>
@@ -50,7 +52,7 @@
 
             <article>
                 <!--Metroid Prime 4-->
-                <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemption">
+                <img src="images/Metroid_Prime_4_Beyond_cover_art.png" alt="Metroid Prime 4">
                 <h3>Metroid Prime 4</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis molestias ipsa aliquam, id expedita culpa quaerat consequuntur eius recusandae provident vitae aliquid</p>
                 <p>Kr 299</p>
@@ -59,7 +61,7 @@
 
             <article>
                 <!--Need For Speed-->
-                <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemption">
+                <img src="images/Need_for_Speed_2015.jpg" alt="Need for speed">
                 <h3>Need For Speed</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis molestias ipsa aliquam, id expedita culpa quaerat consequuntur eius recusandae provident vitae aliquid</p>
                 <p>Kr 499</p>
@@ -68,7 +70,7 @@
 
             <article>
                 <!--Halo 3:ODST-->
-                <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemption">
+                <img src="images/Halo_3_ODST_Box_Art.png" alt="Halo 3: ODST">
                 <h3>Halo 3: ODST</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis molestias ipsa aliquam, id expedita culpa quaerat consequuntur eius recusandae provident vitae aliquid</p>
                 <p>Kr 399</p>
@@ -87,7 +89,7 @@
                 </h3>
             </article>
             <!--Nintendo-->
-                        <article>
+            <article>
                 <h3>
                 <a href="nintendo.html">Nintendo</a>
                 </h3>
@@ -118,7 +120,7 @@
             <input type="email" placeholder="ola.nordmann@gmail.com">
             </label>
             <!--Aldersgrense validering-->
-            <input type="submit" value="Jeg melder meg på!">
+            <input class="btn" type="submit" value="Jeg melder meg på!">
             <label for="age-validation">Bekreft at du er over 18år gammel</label>
             <input type="checkbox" id="age-validation" required>
         </form>
