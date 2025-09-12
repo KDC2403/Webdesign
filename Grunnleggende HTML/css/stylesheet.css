@@ -7,6 +7,10 @@
     --border-color: #828282;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -48,23 +52,59 @@ a {
 
 /*ADVERTISEMENT STYLE*/
 .advertisement {
-    background-color: lightgray;
+    background-image: url("https://picsum.photos/700/200?grayscale");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: var(--border-color);
     text-decoration: none;
+    position: relative;
+    height: 50vh;
+    min-height: 200px;
+ 
+    /*Position of image*/
+    img{
+        width: 100%;
+    }
+
+    /*Position of text*/
+    h2, p, a {
+        position: absolute;
+    }
+
+    p {
+        top: 50px;
+    }
+
+    a {
+        top: 160px;
+    }
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+
+    section {
+        h2 { 
+            text-align: center;
+           }
+    }
+}
+
+main > * {
+    margin: 0 auto;
 }
 
 /*ARTICLE STYLE*/
 article {
-    margin: 1rem 0;
+    margin: 0 auto;
     border: 3px solid #828282;
     padding: 1rem;
     border-radius: 5px;
     max-width: 400px;
     min-width: 250px;
-
-    img{
-        width: 100%;
-        
-    }
 }
 
 /*BUTTON STYLE FOR PRODUCTS*/
@@ -77,8 +117,40 @@ article {
     border: none;
 }
 
+/*SIDE*/
+.side-container {
+    background-color: var(--border-color);
+    padding: 1rem;
+    
+    form {
+        input{
+            display: block;
+            padding: 1rem;
+            margin: 0.4rem 0;
+        }
+    }
+}
+
+.age-check {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
 .btn:hover {
     background-color: darkgoldenrod;
     color: white;
 }
 
+footer {;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--main-color);
+    margin-top: 1rem;
+    p, a {
+        display: inline flex;
+        gap: 1rem;
+        color: white;
+        font-weight: bold;
+    }
+}
