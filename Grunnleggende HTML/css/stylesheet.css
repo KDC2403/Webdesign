@@ -16,12 +16,29 @@ body {
     margin: 0;
 }
 
+/*GRID*/
+#page-container {
+    display: grid;
+    /*grid-template-areas:"header" 
+                        "hero" 
+                        "main" 
+                        "aside" 
+                        "footer";*/
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+}
+
 /*HEADER STYLE*/
 #global-header {
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 1rem;
+/*grid-area: header;*/
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 2;
     nav{
         ul{
             padding: 0;
@@ -61,6 +78,12 @@ a {
     position: relative;
     height: 50vh;
     min-height: 200px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /*grid-area: hero;*/
  
     /*Position of image*/
     img{
@@ -85,6 +108,12 @@ main {
     max-width: 1200px;
     width: 100%;
     margin: 1rem auto;
+    padding: 1rem;
+    /*grid-area: main;*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 
     section {
         h2 { 
@@ -121,6 +150,11 @@ article {
 .side-container {
     background-color: var(--border-color);
     padding: 1rem;
+    /*grid-area: aside;*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
     
     form {
         input{
@@ -147,10 +181,56 @@ footer {
     padding: 1rem;
     background-color: var(--main-color);
     margin-top: 1rem;
+    /*grid-area: footer;*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
     p, a {
         display: inline flex;
         gap: 1rem;
         color: white;
         font-weight: bold;
     }
+}
+
+@media only screen and (min-width: 600px){
+    #page-container{
+        grid-template-columns: 1fr 1fr 0.5fr;
+        grid-template-rows: repeat(4, auto);
+        /*grid-template-areas:"header header header"
+                            "hero hero hero"
+                            "main main main"
+                            "aside aside aside"
+                            "footer footer footer";
+        grid-template-columns: 1fr 1fr 0.5fr*/    
+    }
+
+    #global-header { 
+        grid-column-end: 4;
+    }
+
+    .advertisement {
+        grid-column-end: 4;
+    }
+
+    main {
+        grid-column-end: 3;
+    }
+
+    .side-container {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    footer {
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+
 }
