@@ -2,14 +2,20 @@
 <html lang="nb">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <!-- ICON IMPORT -->
+    <link href="/icons/css/fontawesome.css" rel="stylesheet" />
+    <link href="/icons/css/brands.css" rel="stylesheet" />
+    <link href="/icons/css/solid.css" rel="stylesheet" />
+    <link href="/icons/css/sharp-thin.css" rel="stylesheet" />
+    <link href="/icons/css/sharp-duotone-thin.css" rel="stylesheet" />
+
     <!--LINK TO CSS FILE-->
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
     <!--PAGE TITLE-->
     <title>Forside - Dataspæll</title>
-</head>
+</head> 
 <body>
     <div id="page-container">
 
@@ -18,16 +24,21 @@
     <header id="global-header">
         <a href="index.html" id="mainlogo">LOGO</a>
         <!--NAVIGATION-->
-        <nav>
+        <nav> 
             <ul>
                 <li>
-                    <!--ELEMENTS-->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+                <li>
                     <a href="index.html">Hjem</a>
                 </li>
                 <li>
                     <a href="product.html">Produkter</a>    
                 </li>
-            </ul>
+            </ul> 
         </nav>
     </header>
 
@@ -41,9 +52,9 @@
 
     <!--MAIN-->
     <main>
-        <section>
+        <section class="flex-container flex-grow">
             <h2>Populære spæll</h2>
-            <article>
+            <article class="product-card">
                 <!--Red Dead Redemption-->
                 <img src="images/Red_Dead_Redemption.jpg" alt="Red dead redemption">
                 <h3>Red Dead Redemption</h3>
@@ -52,7 +63,7 @@
                 <a href="" class="btn">Legg i handlevogn</a>
             </article>
 
-            <article>
+            <article class="product-card">
                 <!--Metroid Prime 4-->
                 <img src="images/Metroid_Prime_4_Beyond_cover_art.png" alt="Metroid Prime 4">
                 <h3>Metroid Prime 4</h3>
@@ -61,7 +72,7 @@
                 <a href="" class="btn">Legg i handlevogn</a>
             </article>
 
-            <article>
+            <article class="product-card">
                 <!--Need For Speed-->
                 <img src="images/Need_for_Speed_2015.jpg" alt="Need for speed">
                 <h3>Need For Speed</h3>
@@ -70,7 +81,7 @@
                 <a href="" class="btn">Legg i handlevogn</a>
             </article>
 
-            <article>
+            <article class="product-card">
                 <!--Halo 3:ODST-->
                 <img src="images/Halo_3_ODST_Box_Art.png" alt="Halo 3: ODST">
                 <h3>Halo 3: ODST</h3>
@@ -85,25 +96,25 @@
             <h2>Kategorier</h2>
             
             <!--Action-->
-            <article>
+            <article class="grow-1 category-card">
                 <h3>
                 <a href="action.html">Action</a>
                 </h3>
             </article>
             <!--Nintendo-->
-            <article>
+            <article class="category-card">
                 <h3>
                 <a href="nintendo.html">Nintendo</a>
                 </h3>
             </article>
             <!--Rollespill-->
-            <article>
+            <article class="category-card">
                 <h3>
                 <a href="roleplay.html">Rollespill</a>
                 </h3>
             </article>
             <!--Fantasy-->
-            <article>
+            <article class="grow-2 category-card">
                 <h3>
                 <a href="fantasy.html">Fantasy</a>
                 </h3>
